@@ -31,6 +31,7 @@ from argocd.api.settings_service_api import SettingsServiceApi
 from argocd.api.version_service_api import VersionServiceApi
 
 # import ApiClient
+from argocd.client import ArgoCDClient
 from argocd.api_client import ApiClient
 from argocd.configuration import Configuration
 # import models into sdk package
