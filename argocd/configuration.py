@@ -32,30 +32,48 @@ class Configuration(object):
 
     _default = None
 
-    def __init__(self):
-        """Constructor"""
+    def __init__(self, host=None, username=None, password=None, api_key=None, 
+             api_key_prefix=None, verify_ssl=True, ssl_ca_cert=None, 
+             cert_file=None, key_file=None, proxy=None, debug=False,
+             temp_folder_path=None, connection_pool_maxsize=None):
+        """Constructor
+        
+        :param host: Base url (e.g. https://localhost)
+        :param username: Username for HTTP basic authentication
+        :param password: Password for HTTP basic authentication
+        :param api_key: Dict to store API key(s)
+        :param api_key_prefix: Dict to store API prefix (e.g. Bearer)
+        :param verify_ssl: Set to False to skip verifying SSL certificate when calling API from https server
+        :param ssl_ca_cert: Path to a CA certificate file to verify SSL certificate
+        :param cert_file: Path to client certificate file
+        :param key_file: Path to client key file
+        :param proxy: Proxy URL
+        :param debug: Debug switch to enable debug logging
+        :param temp_folder_path: Temp file folder for downloading files
+        :param connection_pool_maxsize: Maximum size of connection pool
+        """
         if self._default:
             for key in self._default.__dict__.keys():
                 self.__dict__[key] = copy.copy(self._default.__dict__[key])
             return
-
+    
         # Default Base url
-        self.host = "https://localhost"
+        self.host = host or "https://localhost"
         # Temp file folder for downloading files
-        self.temp_folder_path = None
-
+        self.temp_folder_path = temp_folder_path
+    
         # Authentication Settings
         # dict to store API key(s)
-        self.api_key = {}
+        self.api_key = api_key or {}
         # dict to store API prefix (e.g. Bearer)
-        self.api_key_prefix = {}
+        self.api_key_prefix = api_key_prefix or {}
         # function to refresh API key if expired
         self.refresh_api_key_hook = None
         # Username for HTTP basic authentication
-        self.username = ""
+        self.username = username or ""
         # Password for HTTP basic authentication
-        self.password = ""
-
+        self.password = password or ""
+    
         # Logging Settings
         self.logger = {}
         self.logger["package_logger"] = logging.getLogger("argocd")
@@ -69,33 +87,33 @@ class Configuration(object):
         # Debug file location
         self.logger_file = None
         # Debug switch
-        self.debug = False
-
+        self.debug = debug
+    
         # SSL/TLS verification
         # Set this to false to skip verifying SSL certificate when calling API
         # from https server.
-        self.verify_ssl = True
+        self.verify_ssl = verify_ssl
         # Set this to customize the certificate file to verify the peer.
-        self.ssl_ca_cert = None
+        self.ssl_ca_cert = ssl_ca_cert
         # client certificate file
-        self.cert_file = None
+        self.cert_file = cert_file
         # client key file
-        self.key_file = None
+        self.key_file = key_file
         # Set this to True/False to enable/disable SSL hostname verification.
         self.assert_hostname = None
-
+    
         # urllib3 connection pool's maximum number of connections saved
         # per pool. urllib3 uses 1 connection as default value, but this is
         # not the best value when you are making a lot of possibly parallel
         # requests to the same host, which is often the case here.
         # cpu_count * 5 is used as default value to increase performance.
-        self.connection_pool_maxsize = multiprocessing.cpu_count() * 5
-
+        self.connection_pool_maxsize = connection_pool_maxsize or (multiprocessing.cpu_count() * 5)
+    
         # Proxy URL
-        self.proxy = None
+        self.proxy = proxy
         # Safe chars for path_param
         self.safe_chars_for_path_param = ''
-
+    
         # Disable client side validation
         self.client_side_validation = True
 
