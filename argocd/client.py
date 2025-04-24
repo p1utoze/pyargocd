@@ -9,7 +9,7 @@ class ArgoCDClient:
     def __new__(cls):
         if cls._instance is None:
             config_params = {
-                "verify_ssl": os.environ.get('VERIFY_SSL', None).capitalize(),
+                "verify_ssl": eval(os.environ.get('VERIFY_SSL', None).capitalize()),
                 "host": os.environ.get("ARGOCD_URL"),
             }
             config = Configuration(**config_params)
