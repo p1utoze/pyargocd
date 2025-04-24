@@ -18,7 +18,7 @@ class ArgoCDClient:
             cls._instance = super().__new__(cls)
             cls._instance.api_client = api_client
             cls._instance.api_client.set_default_header(
-                "Authorization", f"Bearer {os.environ.get('ARGOCD_API_TOKEN')}"
+                "Authorization", f"Bearer {os.environ.get('ARGOCD_AUTH_TOKEN')}"
             )
             cls._instance.repos = argocd.RepositoryServiceApi(api_client)
             cls._instance.repo_creds = argocd.RepoCredsServiceApi(api_client)
