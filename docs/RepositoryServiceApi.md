@@ -1,4 +1,4 @@
-# pyargocd.RepositoryServiceApi
+# argocd.RepositoryServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -31,13 +31,13 @@ CreateRepository creates a new repository configuration
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
-body = pyargocd.V1alpha1Repository() # V1alpha1Repository | Repository definition
+api_instance = argocd.RepositoryServiceApi()
+body = argocd.V1alpha1Repository() # V1alpha1Repository | Repository definition
 upsert = true # bool | Whether to create in upsert mode. (optional)
 creds_only = true # bool | Whether to operate on credential set instead of repository. (optional)
 
@@ -81,13 +81,13 @@ CreateWriteRepository creates a new write repository configuration
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
-body = pyargocd.V1alpha1Repository() # V1alpha1Repository | Repository definition
+api_instance = argocd.RepositoryServiceApi()
+body = argocd.V1alpha1Repository() # V1alpha1Repository | Repository definition
 upsert = true # bool | Whether to create in upsert mode. (optional)
 creds_only = true # bool | Whether to operate on credential set instead of repository. (optional)
 
@@ -131,12 +131,12 @@ DeleteRepository deletes a repository from the configuration
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -181,12 +181,12 @@ DeleteWriteRepository deletes a write repository from the configuration
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -231,12 +231,12 @@ Get returns a repository or its credentials
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -281,14 +281,14 @@ GetAppDetails returns application details by given path
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 source_repo_url = 'source_repo_url_example' # str | RepoURL is the URL to the repository (Git or Helm) that contains the application manifests
-body = pyargocd.RepositoryRepoAppDetailsQuery() # RepositoryRepoAppDetailsQuery | 
+body = argocd.RepositoryRepoAppDetailsQuery() # RepositoryRepoAppDetailsQuery | 
 
 try:
     # GetAppDetails returns application details by given path
@@ -329,12 +329,12 @@ GetHelmCharts returns list of helm charts in the specified repository
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -379,12 +379,12 @@ GetWrite returns a repository or its write credentials
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -429,12 +429,12 @@ ListApps returns list of apps in the repo
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | 
 revision = 'revision_example' # str |  (optional)
 app_name = 'app_name_example' # str |  (optional)
@@ -481,12 +481,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -530,12 +530,12 @@ ListRepositories gets a list of all configured repositories
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query. (optional)
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -580,12 +580,12 @@ ListWriteRepositories gets a list of all configured write repositories
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | Repo URL for query. (optional)
 force_refresh = true # bool | Whether to force a cache refresh on repo's connection state. (optional)
 app_project = 'app_project_example' # str | App project for query. (optional)
@@ -630,14 +630,14 @@ UpdateRepository updates a repository configuration
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo_repo = 'repo_repo_example' # str | Repo contains the URL to the remote repository
-body = pyargocd.V1alpha1Repository() # V1alpha1Repository | 
+body = argocd.V1alpha1Repository() # V1alpha1Repository | 
 
 try:
     # UpdateRepository updates a repository configuration
@@ -678,14 +678,14 @@ UpdateWriteRepository updates a write repository configuration
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo_repo = 'repo_repo_example' # str | Repo contains the URL to the remote repository
-body = pyargocd.V1alpha1Repository() # V1alpha1Repository | 
+body = argocd.V1alpha1Repository() # V1alpha1Repository | 
 
 try:
     # UpdateWriteRepository updates a write repository configuration
@@ -726,12 +726,12 @@ ValidateAccess validates access to a repository with given parameters
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | The URL to the repo
 body = 'body_example' # str | The URL to the repo
 username = 'username_example' # str | Username for accessing repo. (optional)
@@ -808,12 +808,12 @@ ValidateWriteAccess validates write access to a repository with given parameters
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepositoryServiceApi()
+api_instance = argocd.RepositoryServiceApi()
 repo = 'repo_example' # str | The URL to the repo
 body = 'body_example' # str | The URL to the repo
 username = 'username_example' # str | Username for accessing repo. (optional)

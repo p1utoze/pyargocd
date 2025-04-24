@@ -1,4 +1,4 @@
-# pyargocd.ClusterServiceApi
+# argocd.ClusterServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -22,13 +22,13 @@ Create creates a cluster
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
-body = pyargocd.V1alpha1Cluster() # V1alpha1Cluster | 
+api_instance = argocd.ClusterServiceApi()
+body = argocd.V1alpha1Cluster() # V1alpha1Cluster | 
 upsert = true # bool |  (optional)
 
 try:
@@ -70,12 +70,12 @@ Delete deletes a cluster
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
+api_instance = argocd.ClusterServiceApi()
 id_value = 'id_value_example' # str | value holds the cluster server URL or cluster name
 server = 'server_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
@@ -122,12 +122,12 @@ Get returns a cluster by server address
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
+api_instance = argocd.ClusterServiceApi()
 id_value = 'id_value_example' # str | value holds the cluster server URL or cluster name
 server = 'server_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
@@ -174,12 +174,12 @@ InvalidateCache invalidates cluster cache
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
+api_instance = argocd.ClusterServiceApi()
 id_value = 'id_value_example' # str | value holds the cluster server URL or cluster name
 
 try:
@@ -220,12 +220,12 @@ List returns list of clusters
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
+api_instance = argocd.ClusterServiceApi()
 server = 'server_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 id_type = 'id_type_example' # str | type is the type of the specified cluster identifier ( \"server\" - default, \"name\" ). (optional)
@@ -272,12 +272,12 @@ RotateAuth rotates the bearer token used for a cluster
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
+api_instance = argocd.ClusterServiceApi()
 id_value = 'id_value_example' # str | value holds the cluster server URL or cluster name
 
 try:
@@ -318,14 +318,14 @@ Update updates a cluster
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ClusterServiceApi()
+api_instance = argocd.ClusterServiceApi()
 id_value = 'id_value_example' # str | value holds the cluster server URL or cluster name
-body = pyargocd.V1alpha1Cluster() # V1alpha1Cluster | 
+body = argocd.V1alpha1Cluster() # V1alpha1Cluster | 
 updated_fields = ['updated_fields_example'] # list[str] |  (optional)
 id_type = 'id_type_example' # str | type is the type of the specified cluster identifier ( \"server\" - default, \"name\" ). (optional)
 

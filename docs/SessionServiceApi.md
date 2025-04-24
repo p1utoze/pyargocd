@@ -1,4 +1,4 @@
-# pyargocd.SessionServiceApi
+# argocd.SessionServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,13 +18,13 @@ Create a new JWT for authentication and set a cookie if using HTTP
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.SessionServiceApi()
-body = pyargocd.SessionSessionCreateRequest() # SessionSessionCreateRequest | 
+api_instance = argocd.SessionServiceApi()
+body = argocd.SessionSessionCreateRequest() # SessionSessionCreateRequest | 
 
 try:
     # Create a new JWT for authentication and set a cookie if using HTTP
@@ -64,12 +64,12 @@ Delete an existing JWT cookie if using HTTP
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.SessionServiceApi()
+api_instance = argocd.SessionServiceApi()
 
 try:
     # Delete an existing JWT cookie if using HTTP
@@ -106,12 +106,12 @@ Get the current user's info
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.SessionServiceApi()
+api_instance = argocd.SessionServiceApi()
 
 try:
     # Get the current user's info

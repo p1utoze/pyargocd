@@ -1,4 +1,4 @@
-# pyargocd.NotificationServiceApi
+# argocd.NotificationServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ List returns list of services
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.NotificationServiceApi()
+api_instance = argocd.NotificationServiceApi()
 
 try:
     # List returns list of services
@@ -60,12 +60,12 @@ List returns list of templates
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.NotificationServiceApi()
+api_instance = argocd.NotificationServiceApi()
 
 try:
     # List returns list of templates
@@ -102,12 +102,12 @@ List returns list of triggers
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.NotificationServiceApi()
+api_instance = argocd.NotificationServiceApi()
 
 try:
     # List returns list of triggers

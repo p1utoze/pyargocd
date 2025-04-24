@@ -1,4 +1,4 @@
-# pyargocd.RepoCredsServiceApi
+# argocd.RepoCredsServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -23,13 +23,13 @@ CreateRepositoryCredentials creates a new repository credential set
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
-body = pyargocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | Repository definition
+api_instance = argocd.RepoCredsServiceApi()
+body = argocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | Repository definition
 upsert = true # bool | Whether to create in upsert mode. (optional)
 
 try:
@@ -71,13 +71,13 @@ CreateWriteRepositoryCredentials creates a new repository credential set with wr
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
-body = pyargocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | Repository definition
+api_instance = argocd.RepoCredsServiceApi()
+body = argocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | Repository definition
 upsert = true # bool | Whether to create in upsert mode. (optional)
 
 try:
@@ -119,12 +119,12 @@ DeleteRepositoryCredentials deletes a repository credential set from the configu
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
+api_instance = argocd.RepoCredsServiceApi()
 url = 'url_example' # str | 
 
 try:
@@ -165,12 +165,12 @@ DeleteWriteRepositoryCredentials deletes a repository credential set with write 
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
+api_instance = argocd.RepoCredsServiceApi()
 url = 'url_example' # str | 
 
 try:
@@ -211,12 +211,12 @@ ListRepositoryCredentials gets a list of all configured repository credential se
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
+api_instance = argocd.RepoCredsServiceApi()
 url = 'url_example' # str | Repo URL for query. (optional)
 
 try:
@@ -257,12 +257,12 @@ ListWriteRepositoryCredentials gets a list of all configured repository credenti
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
+api_instance = argocd.RepoCredsServiceApi()
 url = 'url_example' # str | Repo URL for query. (optional)
 
 try:
@@ -303,14 +303,14 @@ UpdateRepositoryCredentials updates a repository credential set
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
+api_instance = argocd.RepoCredsServiceApi()
 creds_url = 'creds_url_example' # str | URL is the URL to which these credentials match
-body = pyargocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | 
+body = argocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | 
 
 try:
     # UpdateRepositoryCredentials updates a repository credential set
@@ -351,14 +351,14 @@ UpdateWriteRepositoryCredentials updates a repository credential set with write 
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.RepoCredsServiceApi()
+api_instance = argocd.RepoCredsServiceApi()
 creds_url = 'creds_url_example' # str | URL is the URL to which these credentials match
-body = pyargocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | 
+body = argocd.V1alpha1RepoCreds() # V1alpha1RepoCreds | 
 
 try:
     # UpdateWriteRepositoryCredentials updates a repository credential set with write access

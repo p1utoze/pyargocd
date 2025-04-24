@@ -1,4 +1,4 @@
-# pyargocd.SettingsServiceApi
+# argocd.SettingsServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Get returns Argo CD settings
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.SettingsServiceApi()
+api_instance = argocd.SettingsServiceApi()
 
 try:
     # Get returns Argo CD settings
@@ -59,12 +59,12 @@ Get returns Argo CD plugins
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.SettingsServiceApi()
+api_instance = argocd.SettingsServiceApi()
 
 try:
     # Get returns Argo CD plugins

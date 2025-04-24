@@ -1,4 +1,4 @@
-# pyargocd.VersionServiceApi
+# argocd.VersionServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Version returns version information of the API server
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.VersionServiceApi()
+api_instance = argocd.VersionServiceApi()
 
 try:
     # Version returns version information of the API server

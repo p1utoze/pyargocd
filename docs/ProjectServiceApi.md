@@ -1,4 +1,4 @@
-# pyargocd.ProjectServiceApi
+# argocd.ProjectServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -27,13 +27,13 @@ Create a new project
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
-body = pyargocd.ProjectProjectCreateRequest() # ProjectProjectCreateRequest | 
+api_instance = argocd.ProjectServiceApi()
+body = argocd.ProjectProjectCreateRequest() # ProjectProjectCreateRequest | 
 
 try:
     # Create a new project
@@ -73,15 +73,15 @@ Create a new project token
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 project = 'project_example' # str | 
 role = 'role_example' # str | 
-body = pyargocd.ProjectProjectTokenCreateRequest() # ProjectProjectTokenCreateRequest | 
+body = argocd.ProjectProjectTokenCreateRequest() # ProjectProjectTokenCreateRequest | 
 
 try:
     # Create a new project token
@@ -123,12 +123,12 @@ Delete deletes a project
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -169,12 +169,12 @@ Delete a new project token
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 project = 'project_example' # str | 
 role = 'role_example' # str | 
 iat = 'iat_example' # str | 
@@ -221,12 +221,12 @@ Get returns a project by name
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -267,12 +267,12 @@ GetDetailedProject returns a project that include project, global project and sc
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -313,12 +313,12 @@ Get returns a virtual project by name
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -359,12 +359,12 @@ GetSchedulesState returns true if there are any active sync syncWindows
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -405,12 +405,12 @@ List returns list of projects
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str |  (optional)
 
 try:
@@ -451,12 +451,12 @@ ListEvents returns a list of project events
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -497,12 +497,12 @@ ListLinks returns all deep links for the particular project
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 name = 'name_example' # str | 
 
 try:
@@ -543,14 +543,14 @@ Update updates a project
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ProjectServiceApi()
+api_instance = argocd.ProjectServiceApi()
 project_metadata_name = 'project_metadata_name_example' # str | Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names +optional
-body = pyargocd.ProjectProjectUpdateRequest() # ProjectProjectUpdateRequest | 
+body = argocd.ProjectProjectUpdateRequest() # ProjectProjectUpdateRequest | 
 
 try:
     # Update updates a project

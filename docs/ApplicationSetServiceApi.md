@@ -1,4 +1,4 @@
-# pyargocd.ApplicationSetServiceApi
+# argocd.ApplicationSetServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -21,13 +21,13 @@ Create creates an applicationset
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ApplicationSetServiceApi()
-body = pyargocd.V1alpha1ApplicationSet() # V1alpha1ApplicationSet | 
+api_instance = argocd.ApplicationSetServiceApi()
+body = argocd.V1alpha1ApplicationSet() # V1alpha1ApplicationSet | 
 upsert = true # bool |  (optional)
 dry_run = true # bool |  (optional)
 
@@ -71,12 +71,12 @@ Delete deletes an application set
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ApplicationSetServiceApi()
+api_instance = argocd.ApplicationSetServiceApi()
 name = 'name_example' # str | 
 appset_namespace = 'appset_namespace_example' # str | The application set namespace. Default empty is argocd control plane namespace. (optional)
 
@@ -119,13 +119,13 @@ Generate generates
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ApplicationSetServiceApi()
-body = pyargocd.ApplicationsetApplicationSetGenerateRequest() # ApplicationsetApplicationSetGenerateRequest | 
+api_instance = argocd.ApplicationSetServiceApi()
+body = argocd.ApplicationsetApplicationSetGenerateRequest() # ApplicationsetApplicationSetGenerateRequest | 
 
 try:
     # Generate generates
@@ -165,12 +165,12 @@ Get returns an applicationset by name
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ApplicationSetServiceApi()
+api_instance = argocd.ApplicationSetServiceApi()
 name = 'name_example' # str | the applicationsets's name
 appset_namespace = 'appset_namespace_example' # str | The application set namespace. Default empty is argocd control plane namespace. (optional)
 
@@ -213,12 +213,12 @@ List returns list of applicationset
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ApplicationSetServiceApi()
+api_instance = argocd.ApplicationSetServiceApi()
 projects = ['projects_example'] # list[str] | the project names to restrict returned list applicationsets. (optional)
 selector = 'selector_example' # str | the selector to restrict returned list to applications only with matched labels. (optional)
 appset_namespace = 'appset_namespace_example' # str | The application set namespace. Default empty is argocd control plane namespace. (optional)
@@ -263,12 +263,12 @@ ResourceTree returns resource tree
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.ApplicationSetServiceApi()
+api_instance = argocd.ApplicationSetServiceApi()
 name = 'name_example' # str | 
 appset_namespace = 'appset_namespace_example' # str | The application set namespace. Default empty is argocd control plane namespace. (optional)
 

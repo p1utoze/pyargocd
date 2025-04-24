@@ -1,4 +1,4 @@
-# pyargocd.CertificateServiceApi
+# argocd.CertificateServiceApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,13 +18,13 @@ Creates repository certificates on the server
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.CertificateServiceApi()
-body = pyargocd.V1alpha1RepositoryCertificateList() # V1alpha1RepositoryCertificateList | List of certificates to be created
+api_instance = argocd.CertificateServiceApi()
+body = argocd.V1alpha1RepositoryCertificateList() # V1alpha1RepositoryCertificateList | List of certificates to be created
 upsert = true # bool | Whether to upsert already existing certificates. (optional)
 
 try:
@@ -66,12 +66,12 @@ Delete the certificates that match the RepositoryCertificateQuery
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.CertificateServiceApi()
+api_instance = argocd.CertificateServiceApi()
 host_name_pattern = 'host_name_pattern_example' # str | A file-glob pattern (not regular expression) the host name has to match. (optional)
 cert_type = 'cert_type_example' # str | The type of the certificate to match (ssh or https). (optional)
 cert_sub_type = 'cert_sub_type_example' # str | The sub type of the certificate to match (protocol dependent, usually only used for ssh certs). (optional)
@@ -116,12 +116,12 @@ List all available repository certificates
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.CertificateServiceApi()
+api_instance = argocd.CertificateServiceApi()
 host_name_pattern = 'host_name_pattern_example' # str | A file-glob pattern (not regular expression) the host name has to match. (optional)
 cert_type = 'cert_type_example' # str | The type of the certificate to match (ssh or https). (optional)
 cert_sub_type = 'cert_sub_type_example' # str | The sub type of the certificate to match (protocol dependent, usually only used for ssh certs). (optional)

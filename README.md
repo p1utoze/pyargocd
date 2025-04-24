@@ -23,7 +23,7 @@ pip install git+https://github.com/p1utoze/pyargocd.git
 
 Then import the package:
 ```python
-import pyargocd 
+import argocd 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import pyargocd
+import argocd
 ```
 
 ## Getting Started
@@ -47,12 +47,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import pyargocd
-from pyargocd.rest import ApiException
+import argocd
+from argocd.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = pyargocd.AccountServiceApi(pyargocd.ApiClient(configuration))
+api_instance = argocd.AccountServiceApi(argocd.ApiClient(configuration))
 resource = 'resource_example' # str | 
 action = 'action_example' # str | 
 subresource = 'subresource_example' # str | 
