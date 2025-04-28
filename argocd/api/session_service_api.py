@@ -47,7 +47,6 @@ class SessionServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.session_service_create_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -143,7 +142,6 @@ class SessionServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.session_service_delete_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -232,7 +230,6 @@ class SessionServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.session_service_get_user_info_with_http_info(**kwargs)  # noqa: E501
         else:

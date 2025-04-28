@@ -46,7 +46,6 @@ class NotificationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.notification_service_list_services_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -135,7 +134,6 @@ class NotificationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.notification_service_list_templates_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -224,7 +222,6 @@ class NotificationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.notification_service_list_triggers_with_http_info(**kwargs)  # noqa: E501
         else:

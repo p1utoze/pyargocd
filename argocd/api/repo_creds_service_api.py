@@ -48,7 +48,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_create_repository_credentials_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -149,7 +148,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_create_write_repository_credentials_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -249,7 +247,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_delete_repository_credentials_with_http_info(url, **kwargs)  # noqa: E501
         else:
@@ -346,7 +343,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_delete_write_repository_credentials_with_http_info(url, **kwargs)  # noqa: E501
         else:
@@ -443,7 +439,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_list_repository_credentials_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -536,7 +531,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_list_write_repository_credentials_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -630,7 +624,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_update_repository_credentials_with_http_info(creds_url, body, **kwargs)  # noqa: E501
         else:
@@ -735,7 +728,6 @@ class RepoCredsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repo_creds_service_update_write_repository_credentials_with_http_info(creds_url, body, **kwargs)  # noqa: E501
         else:

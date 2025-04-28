@@ -47,7 +47,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_create_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -146,7 +145,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_create_token_with_http_info(project, role, body, **kwargs)  # noqa: E501
         else:
@@ -257,7 +255,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_delete_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -357,7 +354,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_delete_token_with_http_info(project, role, iat, **kwargs)  # noqa: E501
         else:
@@ -471,7 +467,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_get_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -568,7 +563,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_get_detailed_project_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -665,7 +659,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_get_global_projects_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -762,7 +755,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_get_sync_windows_state_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -859,7 +851,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_list_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -952,7 +943,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_list_events_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -1049,7 +1039,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_list_links_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -1147,7 +1136,6 @@ class ProjectServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.project_service_update_with_http_info(project_metadata_name, body, **kwargs)  # noqa: E501
         else:

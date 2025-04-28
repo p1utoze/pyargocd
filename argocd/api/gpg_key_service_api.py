@@ -48,7 +48,6 @@ class GPGKeyServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.g_pg_key_service_create_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -148,7 +147,6 @@ class GPGKeyServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.g_pg_key_service_delete_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -241,7 +239,6 @@ class GPGKeyServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.g_pg_key_service_get_with_http_info(key_id, **kwargs)  # noqa: E501
         else:
@@ -338,7 +335,6 @@ class GPGKeyServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.g_pg_key_service_list_with_http_info(**kwargs)  # noqa: E501
         else:

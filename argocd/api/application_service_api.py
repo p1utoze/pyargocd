@@ -49,7 +49,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_create_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -156,7 +155,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_delete_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -274,7 +272,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_delete_resource_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -405,7 +402,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_get_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -527,7 +523,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_get_application_sync_windows_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -635,7 +630,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_get_manifests_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -749,7 +743,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_get_manifests_with_files_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -853,7 +846,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_get_resource_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -978,7 +970,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_list_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -1096,7 +1087,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_list_links_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -1206,7 +1196,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_list_resource_actions_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -1329,7 +1318,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_list_resource_events_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -1448,7 +1436,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_list_resource_links_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -1573,7 +1560,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_managed_resources_with_http_info(application_name, **kwargs)  # noqa: E501
         else:
@@ -1692,7 +1678,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_patch_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -1805,7 +1790,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_patch_resource_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -1949,7 +1933,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_pod_logs_with_http_info(name, pod_name, **kwargs)  # noqa: E501
         else:
@@ -2114,7 +2097,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_pod_logs2_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -2266,7 +2248,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_resource_tree_with_http_info(application_name, **kwargs)  # noqa: E501
         else:
@@ -2389,7 +2370,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_revision_chart_details_with_http_info(name, revision, **kwargs)  # noqa: E501
         else:
@@ -2510,7 +2490,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_revision_metadata_with_http_info(name, revision, **kwargs)  # noqa: E501
         else:
@@ -2627,7 +2606,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_rollback_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -2739,7 +2717,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_run_resource_action_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -2865,7 +2842,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_sync_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -2971,7 +2947,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_terminate_operation_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -3077,7 +3052,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_update_with_http_info(application_metadata_name, body, **kwargs)  # noqa: E501
         else:
@@ -3191,7 +3165,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_update_spec_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -3311,7 +3284,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_watch_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -3434,7 +3406,6 @@ class ApplicationServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.application_service_watch_resource_tree_with_http_info(application_name, **kwargs)  # noqa: E501
         else:

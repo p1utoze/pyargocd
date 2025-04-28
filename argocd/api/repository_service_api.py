@@ -49,7 +49,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_create_repository_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -154,7 +153,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_create_write_repository_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -259,7 +257,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_delete_repository_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -364,7 +361,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_delete_write_repository_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -469,7 +465,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_get_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -573,7 +568,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_get_app_details_with_http_info(source_repo_url, body, **kwargs)  # noqa: E501
         else:
@@ -679,7 +673,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_get_helm_charts_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -784,7 +777,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_get_write_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -890,7 +882,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_list_apps_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -998,7 +989,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_list_refs_with_http_info(repo, **kwargs)  # noqa: E501
         else:
@@ -1103,7 +1093,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_list_repositories_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -1204,7 +1193,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_list_write_repositories_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -1304,7 +1292,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_update_repository_with_http_info(repo_repo, body, **kwargs)  # noqa: E501
         else:
@@ -1409,7 +1396,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_update_write_repository_with_http_info(repo_repo, body, **kwargs)  # noqa: E501
         else:
@@ -1531,7 +1517,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_validate_access_with_http_info(repo, body, **kwargs)  # noqa: E501
         else:
@@ -1704,7 +1689,6 @@ class RepositoryServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.repository_service_validate_write_access_with_http_info(repo, body, **kwargs)  # noqa: E501
         else:

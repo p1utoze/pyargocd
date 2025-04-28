@@ -48,7 +48,6 @@ class CertificateServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.certificate_service_create_certificate_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -150,7 +149,6 @@ class CertificateServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.certificate_service_delete_certificate_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -251,7 +249,6 @@ class CertificateServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.certificate_service_list_certificates_with_http_info(**kwargs)  # noqa: E501
         else:

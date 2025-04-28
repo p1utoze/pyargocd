@@ -46,7 +46,6 @@ class VersionServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.version_service_version_with_http_info(**kwargs)  # noqa: E501
         else:

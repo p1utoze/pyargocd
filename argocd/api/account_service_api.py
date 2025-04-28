@@ -49,7 +49,6 @@ class AccountServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.account_service_can_i_with_http_info(resource, action, subresource, **kwargs)  # noqa: E501
         else:
@@ -161,7 +160,6 @@ class AccountServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.account_service_create_token_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
@@ -266,7 +264,6 @@ class AccountServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.account_service_delete_token_with_http_info(name, id, **kwargs)  # noqa: E501
         else:
@@ -370,7 +367,6 @@ class AccountServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.account_service_get_account_with_http_info(name, **kwargs)  # noqa: E501
         else:
@@ -466,7 +462,6 @@ class AccountServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.account_service_list_accounts_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -556,7 +551,6 @@ class AccountServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.account_service_update_password_with_http_info(body, **kwargs)  # noqa: E501
         else:

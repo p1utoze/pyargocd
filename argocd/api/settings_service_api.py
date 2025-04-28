@@ -46,7 +46,6 @@ class SettingsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.settings_service_get_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -135,7 +134,6 @@ class SettingsServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.settings_service_get_plugins_with_http_info(**kwargs)  # noqa: E501
         else:

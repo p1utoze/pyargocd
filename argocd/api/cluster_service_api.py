@@ -48,7 +48,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_create_with_http_info(body, **kwargs)  # noqa: E501
         else:
@@ -151,7 +150,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_delete_with_http_info(id_value, **kwargs)  # noqa: E501
         else:
@@ -260,7 +258,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_get_with_http_info(id_value, **kwargs)  # noqa: E501
         else:
@@ -366,7 +363,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_invalidate_cache_with_http_info(id_value, **kwargs)  # noqa: E501
         else:
@@ -466,7 +462,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_list_with_http_info(**kwargs)  # noqa: E501
         else:
@@ -568,7 +563,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_rotate_auth_with_http_info(id_value, **kwargs)  # noqa: E501
         else:
@@ -668,7 +662,6 @@ class ClusterServiceApi(object):
                  If the method is called asynchronously,
                  returns the request thread.
         """
-        kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
             return self.cluster_service_update_with_http_info(id_value, body, **kwargs)  # noqa: E501
         else:
