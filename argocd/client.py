@@ -2,6 +2,19 @@ from __future__ import print_function
 import os
 import argocd
 from argocd.configuration import Configuration
+
+def normalize_url(url: str, verify_ssl: bool) -> str:
+    # If URL already starts with http:// or https://, return as is
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+
+    # If URL is exactly "example.com", add the appropriate scheme
+    scheme = "https://" if verify_ssl else "http://"
+    return f"{scheme}{url}"
+
+    # If URL is anything else, leave it unchanged
+    return url
+    
 class ArgoCDClient:
     _instance = None
     api_client = None
@@ -10,7 +23,7 @@ class ArgoCDClient:
         if cls._instance is None:
             config_params = {
                 "verify_ssl": eval(os.environ.get('ARGOCD_VERIFY_SSL', None).capitalize()),
-                "host": os.environ.get("ARGOCD_URL"),
+                "host": normalize_url(os.environ.get("ARGOCD_URL"), os.environ.get('ARGOCD_VERIFY_SSL', None)),
             }
             config = Configuration(**config_params)
             api_client = argocd.ApiClient(config)
